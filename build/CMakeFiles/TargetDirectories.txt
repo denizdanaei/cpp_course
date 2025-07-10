@@ -1,0 +1,17 @@
+/home/ddanaei/Desktop/CppCourse/build/CMakeFiles/edit_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/CMakeFiles/rebuild_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/functions-fahrenheit/CMakeFiles/functions-fahrenheit.dir
+/home/ddanaei/Desktop/CppCourse/build/functions-fahrenheit/CMakeFiles/edit_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/functions-fahrenheit/CMakeFiles/rebuild_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/time-conversion/CMakeFiles/time-conversion.dir
+/home/ddanaei/Desktop/CppCourse/build/time-conversion/CMakeFiles/edit_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/time-conversion/CMakeFiles/rebuild_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/q-and-a/CMakeFiles/q-and-a.dir
+/home/ddanaei/Desktop/CppCourse/build/q-and-a/CMakeFiles/edit_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/q-and-a/CMakeFiles/rebuild_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/student/CMakeFiles/student.dir
+/home/ddanaei/Desktop/CppCourse/build/student/CMakeFiles/edit_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/student/CMakeFiles/rebuild_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/school/CMakeFiles/school.dir
+/home/ddanaei/Desktop/CppCourse/build/school/CMakeFiles/edit_cache.dir
+/home/ddanaei/Desktop/CppCourse/build/school/CMakeFiles/rebuild_cache.dir
