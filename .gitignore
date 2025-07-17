@@ -71,3 +71,15 @@ core
 *.bak
 *.backup
 *.orig
+
+
+# IDE and Language Server files
+.cache/
+.clangd/
+compile_commands.json
+
+# LibreOffice lock files
+.~lock.*#
+
+# Office temporary files
+~$*
