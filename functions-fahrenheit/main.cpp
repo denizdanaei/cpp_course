@@ -2,28 +2,18 @@
 // functions-fahrenheit
 
 #include <iostream>
-
-double convertCelsiusToFahrenheit(double celsius)
-{
-    return celsius * 1.8 + 32;
-}
-
-int getTemperatureFromUser()
-{
-    double Celsius = 12;
-    std::cout << "Enter temperature in Celsius: ";
-    std::cin >> Celsius;
-    std::cout << "You Entered: " << Celsius << std::endl;
-    return Celsius;
-}
-
+#include "fahrenheit.h"
 
 int main()
 {
     double celsius = getTemperatureFromUser();
     double fahrenheit = convertCelsiusToFahrenheit(celsius);
+    double kelvin = convertCelsiusToKelvin(celsius);
 
-    std::cout << "Temperature in Fahrenheit: " << fahrenheit << std::endl;
+    std::cout << "Temperature conversions:" << std::endl;
+    std::cout << "Celsius: " << celsius << "°C" << std::endl;
+    std::cout << "Fahrenheit: " << fahrenheit << "°F" << std::endl;
+    std::cout << "Kelvin: " << kelvin << "K" << std::endl;
 
     return 0;
 }
