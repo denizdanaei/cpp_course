@@ -2,12 +2,12 @@
 #include <iostream>
 #include "student.hpp"
 
-Student::Student(const std::string& name, const double& gpa, const int& id) : m_name(name), m_gpa(gpa), m_id(id) {
+Student::Student(const std::string& name, double& gpa, const int& id) : m_name(name), m_gpa(gpa), m_id(id) {
 }
 Student::Student(const Student& other) : m_name(other.m_name), m_id(other.m_id),m_gpa(other.m_gpa) {}
 Student::~Student() {}
 
-void Student::add_gpa(double gpa) {
+void Student::set_gpa(double gpa) {
     m_gpa = gpa;
 }
 
@@ -28,7 +28,7 @@ unsigned int Student::get_id() const {
 }
 
 
-bool Student::is_gpa_grater_than(const Student& student_1, const Student& student_2) {
+bool Student::is_gpa_greater_than(const Student& student_1, const Student& student_2) {
     return student_1.get_gpa() > student_2.get_gpa();
 }
 

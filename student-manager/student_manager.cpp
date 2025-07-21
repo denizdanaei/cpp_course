@@ -3,41 +3,30 @@
 #include "student.hpp"
 #include <iostream>
 #include "student_manager.hpp"
+#include <memory>
 
 
-StudentManager::~StudentManager(){
-    for (Student* student: m_students) {
-        delete student;
-    }
+void StudentManager::add_student(std::string name, double gpa, const int& id) {
+    m_students.push_back(std::make_unique<Student>(name, gpa, id));
 }
 
-void StudentManager::add_student(std::string name, const double& gpa, const int& id) {
-    Student *student = new Student(name, gpa, id);
-    m_students.push_back(student);
-}
+const Student*  StudentManager::get_topper() const {
+    if (m_students.empty())
+        return nullptr;
 
-double StudentManager::get_topper() const {
-    double topper;
-    Student* top;
-    if (m_students.size()>0) {
-        for (Student* student: m_students) {
-                double tmp = student->get_gpa();
-                if (tmp>topper){
-                    topper = tmp;
-                    top = student;
-                }
-            }
+    const Student* top = m_students[0].get();
 
-            std::cout << "The top gpa is for" << std::endl;
-            top->print_info();
+    for (const auto& student : m_students) {
+        if (Student::is_gpa_greater_than(*student, *top))
+            top = student.get();
     }
-    else {
-        std::cout << "No student record exists!" << std::endl;
-    }
-    return topper;
+
+    std::cout << "Topper:\n";
+    top->print_info();
+    return top;
 }
 
 void StudentManager::print_all() const {
 
-    for (Student* student: m_students){student->print_info();}
+    for (const auto& student: m_students){student->print_info();}
 }

@@ -6,20 +6,20 @@
 
 class Student {
     public:
-        Student(const std::string& name, const double& gpa, const int& id); // Constructor
+        Student(const std::string& name, double& gpa, const int& id); // Constructor
         Student(const Student& other); // Copy constructor
         ~Student(); // Destructor
 
-        void add_gpa(double gpa);
+        void set_gpa(double gpa);
         double get_gpa() const;
 
-        void add_id(int roll_number);
+        void add_id(int id);
         unsigned int get_id() const;
 
         const std::string& get_name() const;
 
         void print_info() const;
-        static bool is_gpa_grater_than(const Student& student_1, const Student& student_2);
+        static bool is_gpa_greater_than(const Student& student_1, const Student& student_2);
 
     private:
         std::string m_name;
