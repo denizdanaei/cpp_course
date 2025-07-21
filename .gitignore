@@ -83,3 +83,6 @@ compile_commands.json
 
 # Office temporary files
 ~$*
+
+# Ignore all zip archives
+*.zip

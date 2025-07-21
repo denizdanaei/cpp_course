@@ -1,15 +1,17 @@
 #include <gtest/gtest.h>
-#include "fahrenheit.h"
+
 #include <cmath>
 
+#include "fahrenheit.h"
+
 class FahrenheitTest : public ::testing::Test {
-protected:
+  protected:
     const double TOLERANCE = 0.001;
-    
+
     void SetUp() override {
         // Setup code if needed
     }
-    
+
     void TearDown() override {
         // Cleanup code if needed
     }

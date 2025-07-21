@@ -2,10 +2,10 @@
 // functions-fahrenheit
 
 #include <iostream>
+
 #include "fahrenheit.h"
 
-int main()
-{
+int main() {
     double celsius = getTemperatureFromUser();
     double fahrenheit = convertCelsiusToFahrenheit(celsius);
     double kelvin = convertCelsiusToKelvin(celsius);
@@ -17,4 +17,3 @@ int main()
 
     return 0;
 }
-

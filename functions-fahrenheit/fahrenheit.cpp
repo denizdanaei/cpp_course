@@ -1,40 +1,34 @@
 #include "fahrenheit.h"
+
 #include <iostream>
 
-double convertCelsiusToFahrenheit(double celsius)
-{
+double convertCelsiusToFahrenheit(double celsius) {
     return celsius * 1.8 + 32;
 }
 
-double convertFahrenheitToCelsius(double fahrenheit)
-{
+double convertFahrenheitToCelsius(double fahrenheit) {
     return (fahrenheit - 32) / 1.8;
 }
 
-double convertCelsiusToKelvin(double celsius)
-{
+double convertCelsiusToKelvin(double celsius) {
     return celsius + 273.15;
 }
 
-double convertKelvinToCelsius(double kelvin)
-{
+double convertKelvinToCelsius(double kelvin) {
     return kelvin - 273.15;
 }
 
-double convertFahrenheitToKelvin(double fahrenheit)
-{
+double convertFahrenheitToKelvin(double fahrenheit) {
     double celsius = convertFahrenheitToCelsius(fahrenheit);
     return convertCelsiusToKelvin(celsius);
 }
 
-double convertKelvinToFahrenheit(double kelvin)
-{
+double convertKelvinToFahrenheit(double kelvin) {
     double celsius = convertKelvinToCelsius(kelvin);
     return convertCelsiusToFahrenheit(celsius);
 }
 
-double getTemperatureFromUser()
-{
+double getTemperatureFromUser() {
     double celsius = 0;
     std::cout << "Enter temperature in Celsius: ";
     std::cin >> celsius;

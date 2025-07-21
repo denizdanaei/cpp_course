@@ -2,13 +2,8 @@
 
 #include "vector.hpp"
 
-int main()
-{
-
+int main() {
     Vector<int> test;
-    
-
-
 
     return 0;
 }

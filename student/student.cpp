@@ -1,10 +1,11 @@
 // Student class containing a name and grade
 #include "student.hpp"
+
 #include <iostream>
 
-Student::Student(const std::string& name) : name(name){
+Student::Student(const std::string& name) : name(name) {
     // Constructor initializes the student's name
-    instance_count++; 
+    instance_count++;
 }
 Student::Student(const Student& other) : name(other.name) {
     // Copy constructor to handle copying of Student objects
@@ -22,7 +23,8 @@ const std::string& Student::get_name() const {
 }
 
 double Student::get_average() const {
-    if (grades.empty()) return 0.0; // Return 0 if no grades are present
+    if (grades.empty())
+        return 0.0;  // Return 0 if no grades are present
     double sum = 0.0;
     for (double grade : grades) {
         sum += grade;
@@ -34,8 +36,7 @@ bool Student::is_average_grater_than(const Student& student_1, const Student& st
     return student_1.get_average() > student_2.get_average();
 }
 
-
 int Student::get_instance_count() {
     return instance_count;
 }
-int Student::instance_count = 0; // Initialize static member variable
+int Student::instance_count = 0;  // Initialize static member variable

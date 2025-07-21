@@ -9,4 +9,4 @@ double convertFahrenheitToKelvin(double fahrenheit);
 double convertKelvinToFahrenheit(double kelvin);
 double getTemperatureFromUser();
 
-#endif // FAHRENHEIT_H
+#endif  // FAHRENHEIT_H

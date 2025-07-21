@@ -1,5 +1,6 @@
 //
 #include "media-player.hpp"
+
 #include "song.hpp"
 
 MediaPlayer::~MediaPlayer() {
