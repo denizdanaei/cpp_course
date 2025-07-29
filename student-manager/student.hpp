@@ -1,6 +1,5 @@
 // Student class header file
-#ifndef STUDENT_HPP
-#define STUDENT_HPP
+#pragma once
 #include <string>
 
 class Student {
@@ -26,4 +25,3 @@ class Student {
     unsigned int m_id;
 };
 
-#endif

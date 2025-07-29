@@ -1,8 +1,6 @@
 
 // create a student profile
-#include "student.hpp"
 #include "student_manager.hpp"
-// #include <iostream>
 
 int main() {
     StudentManager lely;
